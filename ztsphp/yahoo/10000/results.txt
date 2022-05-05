@@ -1,0 +1,19 @@
+array_nts-----
+1001 x / time_total: 4,000765
+801 x / time_total: 3,358532
+601 x / time_total: 2,350398
+401 x / time_total: 1,517273
+201 x / time_total: 0,801453
+array_zts-----
+2201 x / time_total: 7,557100
+2001 x / time_total: 7,588587
+1801 x / time_total: 7,521902
+1601 x / time_total: 7,475069
+1401 x / time_total: 7,175629
+1201 x / time_total: 7,253986
+1001 x / time_total: 7,017446
+801 x / time_total: 7,163607
+601 x / time_total: 6,991200
+401 x / time_total: 7,064207
+201 x / time_total: 6,843904
+ntszts

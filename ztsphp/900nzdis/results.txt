@@ -1,0 +1,25 @@
+nts---------
+real	1m32.576s
+real	1m36.100s
+real	1m48.938s
+zts2--------
+real	1m35.990s
+real	1m37.574s
+real	1m37.627s
+zts3--------
+real	1m33.428s
+real	1m35.692s
+real	1m33.022s
+zts4--------
+real	1m32.486s
+real	1m31.659s
+real	1m31.830s
+zts5--------
+real	1m33.003s
+real	1m37.138s
+real	1m31.668s
+zts6--------
+real	1m31.036s
+real	1m31.565s
+real	1m30.992s
+ntszts

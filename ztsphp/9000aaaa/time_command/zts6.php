@@ -1,0 +1,54 @@
+<?php
+$data = [];
+
+for ($i=0; $i < 9000; $i++) {
+  array_push($data, "aaaa");
+}
+
+$runtime1 = new \parallel\Runtime();
+$runtime2 = new \parallel\Runtime();
+$runtime3 = new \parallel\Runtime();
+$runtime4 = new \parallel\Runtime();
+$runtime5 = new \parallel\Runtime();
+$runtime6 = new \parallel\Runtime();
+
+$runtime1->run(function($data){
+  for ($i = 0; $i < 1500; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+
+$runtime2->run(function($data){
+  for ($i = 1500; $i < 3000; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+
+
+$runtime3->run(function($data){
+  for ($i = 3000; $i < 4500; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+
+
+$runtime4->run(function($data){
+  for ($i = 4500; $i < 6000; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+
+
+$runtime5->run(function($data){
+  for ($i = 6000; $i < 7500; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+
+
+$runtime6->run(function($data){
+  for ($i = 7500; $i < 9000; $i++) {
+    echo $data[$i] . PHP_EOL;    
+  }
+}, array($data));
+

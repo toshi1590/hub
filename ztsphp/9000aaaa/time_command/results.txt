@@ -1,0 +1,37 @@
+nts------
+real	0m1.322s
+real	0m1.155s
+real	0m1.202s
+real	0m1.214s
+real	0m0.896s
+zts2-----
+real	0m0.801s
+real	0m1.124s
+real	0m1.122s
+real	0m0.347s
+real	0m0.670s
+zts3-----
+real	0m0.642s
+real	0m0.521s
+real	0m0.565s
+real	0m0.906s
+real	0m0.878s
+zts4-----
+real	0m0.404s
+real	0m0.286s
+real	0m0.549s
+real	0m0.448s
+real	0m0.466s
+zts5-----
+real	0m0.394s
+real	0m0.518s
+real	0m0.399s
+real	0m0.252s
+real	0m0.455s
+zts6-----
+real	0m0.413s
+real	0m0.255s
+real	0m0.446s
+real	0m0.285s
+real	0m0.345s
+ntszts
