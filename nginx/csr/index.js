@@ -98,10 +98,10 @@ const ajax_inputs = document.getElementById('ajax_inputs');
 
 function create_ajax_inputs (use_btn) {
   use_btn.remove();
-  const label_for_xpath_for_ajax = get_label('xpath for ajax(click)', 'mb-1');
-  const xpath_for_ajax = get_input('text', 'form-control mb-1', 'xpath_for_ajax', 'e.g. /html/body/div');
+  const label_for_xpath_of_ajax_btn = get_label('xpath of ajax button', 'mb-1');
+  const xpath_of_ajax_btn = get_input('text', 'form-control mb-1', 'xpath_of_ajax_btn', 'e.g. next');
   const not_use_btn = get_btn('not use', 'btn btn-danger mb-1', '', 'delete_ajax_inputs()');
-  const elements = [label_for_xpath_for_ajax, xpath_for_ajax, not_use_btn];
+  const elements = [label_for_xpath_of_ajax_btn, xpath_of_ajax_btn, not_use_btn];
 
   for (let i = 0; i < elements.length; i++) {
     ajax_inputs.appendChild(elements[i])
@@ -198,7 +198,7 @@ function create_pagination_inputs (use_btn) {
   text_of_next_btn.setAttribute('value', '»');
   const label_for_pages = get_label('how many pages?', 'mb-1');
   const pages = get_input('number', 'form-control mb-1', 'pages', 'e.g. 1');
-  pages.setAttribute('min', '1');
+  pages.setAttribute('min', '2');
   pages.setAttribute('step', '1');
   const not_use_btn = get_btn('not use', 'btn btn-danger mb-1', '', 'delete_pagination_inputs()');
   const elements = [label_for_text_of_next_btn, text_of_next_btn, label_for_pages, pages, not_use_btn];
@@ -240,7 +240,8 @@ $(function() {
       $('#chart_section').html('');
 
       $.ajax({
-	url: 'http://localhost:81/csr/zts.php',
+        url: 'http://localhost:81/csr/zts5.php',
+	//url: 'http://localhost:81/csr/zts3.php',
         type: 'POST',
         data: $('#scraping_form').serialize(),
         // Until request is completed
@@ -276,11 +277,15 @@ $(function() {
 
 // result_table_section
 const result_table_section = document.getElementById('result_table_section');
-let id_for_delete_btn_for_result_table = 1;
 
 function delete_tr_for_result_table(delete_btn){
-  scraped_data.splice(delete_btn.getAttribute('id'), 1);
   delete_tr(delete_btn);
+
+  for (var i = 1; i < scraped_data.length; i++) {
+    if (delete_btn.getAttribute('id') == scraped_data[i][0]) {
+      scraped_data.splice(i, 1);
+    }
+  }
 }
 
 function display_result_table (scraped_data) {
@@ -298,8 +303,6 @@ function display_result_table (scraped_data) {
     if (i == 0) {
       for (let j = 0; j < scraped_data[i].length; j++) {
         const th = document.createElement('th');
-        th.setAttribute('class', 'sort');
-        th.setAttribute('data-sort', scraped_data[0][j]);
         const text_node = document.createTextNode(scraped_data[0][j]);
         th.appendChild(text_node);
         tr.appendChild(th);
@@ -319,20 +322,12 @@ function display_result_table (scraped_data) {
       }
 
       const td = document.createElement('td');
-      const delete_btn = get_btn('delete', 'btn btn-danger', id_for_delete_btn_for_result_table, 'delete_tr_for_result_table(this)');
+      const delete_btn = get_btn('delete', 'btn btn-danger', i, 'delete_tr_for_result_table(this)');
       td.appendChild(delete_btn);
       tr.appendChild(td);
       table.querySelector('tbody').appendChild(tr);
-
-      id_for_delete_btn_for_result_table++;
     }
   }
-
-  const options = {
-    valueNames: value_names
-  };
-  const dataList = new List('result_table', options);
-  dataList.sort(scraped_data[0][0], {order : 'asc' });
 }
 
 
