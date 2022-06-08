@@ -1,0 +1,300 @@
+pages, rows, time
+1, 1, 59.593416929245
+1, 2, 70.331562995911
+1, 3, 96.752661943436
+1, 4, 122.07538604736
+1, 5, 152.373472929
+2, 1, 74.135720014572
+2, 2, 96.473672866821
+2, 3, 124.56299901009
+2, 4, 147.1592669487
+2, 5, 174.36181092262
+3, 1, 88.49242401123
+3, 2, 110.3468978405
+3, 3, 141.03038311005
+3, 4, 160.18147301674
+3, 5, 190.30377793312
+4, 1, 106.73001098633
+4, 2, 132.91974592209
+4, 3, 160.47140407562
+4, 4, 182.78480505943
+4, 5, 210.97207403183
+5, 1, 132.33874797821
+5, 2, 159.11208295822
+5, 3, 191.59073591232
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+5, 5, 246.11937785149
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 2, 216.36591410637
+6, 3, 267.35753512383
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 5, 371.76412796974
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+7, 2, 242.17469215393
+7, 3, 286.82241511345
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+7, 5, 409.61819887161
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+9, 1, 213.18658208847
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+9, 3, 330.59300398827
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+10, 1, 210.47172212601
+10, 2, 271.48017406464
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+11, 1, 254.82670617104
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (738, 784). Other element would receive the click: <td ng-repeat="item in il.gc.gridParams.columns" permission="get" ng-click="item.link != true ? il.gc.gridParams.click_function(row) : il.gc.gridParams.link_function(row[item['key']])" class="ng-scope" role="button" tabindex="0">...</td>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (738, 832). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+12, 2, 342.21737289429
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="btn-group ng-scope" ng-if="il.gc.total > il.gc.per_page">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (750, 832). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (750, 832). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (742, 832). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (742, 832). Other element would receive the click: <td ng-repeat="item in il.gc.gridParams.columns" permission="get" ng-click="item.link != true ? il.gc.gridParams.click_function(row) : il.gc.gridParams.link_function(row[item['key']])" class="ng-scope" role="button" tabindex="0">...</td>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+
+
+
+
+
+
+
+
+
+
+1, 1, 57.907269954681
+1, 2, 71.609217882156
+1, 3, 101.23462414742
+1, 4, 125.74826788902
+1, 5, 148.95232510567
+1, 6, 175.36984395981
+1, 7, 200.13192796707
+1, 8, 224.71096110344
+1, 9, 250.95249009132
+1, 10, 276.51485705376
+1, 11, 304.61904001236
+1, 12, 328.22941398621
+1, 13, 353.56726884842
+1, 14, 380.31228518486
+1, 15, 406.48047614098
+2, 1, 74.384383916855
+2, 2, 96.734337091446
+2, 3, 125.59270215034
+2, 4, 150.67462205887
+2, 5, 174.68442296982
+2, 6, 199.63540315628
+2, 7, 230.81990289688
+2, 8, 257.53618502617
+2, 9, 282.63852310181
+2, 10, 304.9952340126
+2, 11, 329.292304039
+2, 12, 355.01779079437
+2, 13, 392.20828986168
+2, 14, 429.17865490913
+3, 1, 98.061106920242
+3, 2, 116.35843014717
+3, 3, 143.86461615562
+3, 4, 170.67207789421
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 6, 229.36098599434
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 8, 280.11711788177
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 10, 336.65839600563
+3, 12, 394.50706005096
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 14, 455.692029953
+4, 1, 114.15087389946
+4, 2, 132.47807097435
+4, 3, 163.01746201515
+4, 4, 196.40555000305
+4, 5, 221.94778490067
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="btn-group ng-scope" ng-if="il.gc.total > il.gc.per_page">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 9, 317.78394889832
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 11, 384.23319482803
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="btn-group ng-scope" ng-if="il.gc.total > il.gc.per_page">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+
+
+
+
+
+1, 1, 64.429218053818
+1, 2, 72.719574928284
+1, 3, 98.724918842316
+1, 4, 129.54244709015
+
+
+
+
+
+
+
+1, 1, 49.098479032516
+1, 2, 73.190803050995
+1, 3, 99.413788080215
+1, 4, 124.15511512756
+1, 5, 150.11591005325
+1, 6, 174.49020504951
+1, 7, 200.93980908394
+1, 8, 226.93934297562
+1, 9, 250.39265084267
+1, 10, 276.40555286407
+1, 11, 303.05584597588
+1, 12, 327.10833001137
+1, 13, 353.86482691765
+1, 14, 379.08680891991
+1, 15, 405.73937797546
+2, 1, 76.887173891068
+2, 2, 99.260992050171
+2, 3, 123.37069702148
+2, 4, 157.18922710419
+2, 5, 175.25180602074
+2, 6, 202.54961705208
+2, 7, 226.64644002914
+2, 8, 253.56775903702
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+2, 10, 305.96955800056
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+2, 12, 354.63399410248
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+2, 14, 408.70947599411
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 1, 95.544748067856
+3, 2, 107.46478199959
+3, 3, 142.88924598694
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 5, 193.33550310135
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 7, 245.38264608383
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 9, 296.30065512657
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 11, 364.87291717529
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 13, 402.28069400787
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+3, 15, 475.27983212471
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 2, 134.80121803284
+4, 3, 160.50360798836
+4, 4, 184.11359786987
+4, 5, 215.74944806099
+4, 6, 242.02793598175
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 8, 296.1230340004
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 10, 351.29055190086
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 12, 413.92732810974
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+4, 14, 462.40452718735
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+5, 1, 140.26324892044
+5, 2, 155.9891409874
+5, 3, 186.00750017166
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+5, 5, 240.24133396149
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+5, 7, 302.74293112755
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+5, 9, 363.93101096153
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 2, 217.06330680847
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="btn-group ng-scope" ng-if="il.gc.total > il.gc.per_page">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 5, 382.45921397209
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 7, 488.40165281296
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+6, 10, 708.21689891815
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+7, 2, 244.60555005074
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 830). Other element would receive the click: <div class="col-md-12">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(7, 'no such element...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+7, 6, 457.33519601822
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+8, 2, 275.87092494965
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+8, 4, 404.86060285568
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 736). Other element would receive the click: <td ng-repeat="item in il.gc.gridParams.columns" permission="get" ng-click="item.link != true ? il.gc.gridParams.click_function(row) : il.gc.gridParams.link_function(row[item['key']])" class="ng-scope" role="button" tabindex="0">...</td>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+9, 2, 282.00033593178
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+9, 4, 377.30707502365
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 832). Other element would receive the click: <div class="btn-group ng-scope" ng-if="il.gc.total > il.gc.per_page">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+Fatal error: Uncaught parallel\Future\Error\Foreign: element click intercepted: Element <a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">...</a> is not clickable at point (730, 748). Other element would receive the click: <div ng-if="item.trueFalseVal" class="text-center ng-scope">...</div>
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(64, 'element click i...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+10, 2, 280.18792700768
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)
+10, 4, 395.78287196159
+#0 /var/www/html/csr/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(331): Facebook\WebDriver\Exception\WebDriverException::throwException(13, 'Error forwardin...', Array)

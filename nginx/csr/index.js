@@ -130,16 +130,76 @@ add_btn_for_column_numbers_to_scrape.onclick = function () {
 }
 
 
+
+
+
+
+
+// // column_numbers_to_click_section
+// const column_numbers_to_click_section = document.getElementById('column_numbers_to_click_section');
+// const add_btn_for_column_numbers_to_click = document.getElementById('add_btn_for_column_numbers_to_click');
+//
+// function add_3_tds (add_btn) {
+//   const element_1 = document.createTextNode('');
+//   const element_2 = document.createTextNode('');
+//   const element_3 = document.createTextNode('');
+//   const element_4 = get_input('text', 'form-control', 'titles[]', 'e.g. price');
+//   const element_5 = get_input('text', 'form-control', `xpaths_to_scrape_in_new_pages[${add_btn.getAttribute('id')}][]`, 'e.g. /html/body/div');
+//   const element_6 = get_btn('delete', 'btn btn-danger', '', 'delete_tr(this)');
+//   const elements = [element_1, element_2, element_3, element_4, element_5, element_6];
+//   add_tr_in_tbody(elements, add_btn.closest('table').querySelector('tbody'));
+// }
+//
+// function get_column_number_from_xpath (input_for_xpath_of_element_to_click_in_the_table) {
+//   const td_for_column_number_from_xpath = input_for_xpath_of_element_to_click_in_the_table.closest('td').nextElementSibling;
+//   const td_part_of_xpath = input_for_xpath_of_element_to_click_in_the_table.value.match(/td\[[0-9]+\]/); //match method returns an array
+//
+//   if (td_part_of_xpath !== null) {
+//     const column_number = td_part_of_xpath[0].match(/[0-9]+/);
+//     td_for_column_number_from_xpath.innerHTML = column_number[0];
+//   }else {
+//     td_for_column_number_from_xpath.innerHTML = '';
+//   }
+// }
+//
+// let x = 0;
+//
+// add_btn_for_column_numbers_to_click.onclick = function () {
+//   const table = get_table();
+//
+//   const element_for_th_1 = document.createTextNode('xpath of element to click in the table');
+//   const element_for_th_2 = document.createTextNode('column number');
+//   const element_for_th_3 = document.createTextNode('');
+//   const element_for_th_4 = document.createTextNode('title');
+//   const element_for_th_5 = document.createTextNode('xpath to scrape in a new page');
+//   const element_for_th_6 = document.createTextNode('');
+//   const elements_for_ths = [element_for_th_1, element_for_th_2, element_for_th_3, element_for_th_4, element_for_th_5, element_for_th_6];
+//   add_tr_in_thead(elements_for_ths, table.querySelector('thead'));
+//
+//   const element_for_td_1 = get_input('text', 'form-control', 'xpaths_of_elements_to_click_in_the_table[]', 'e.g. /html/body/div');
+//   element_for_td_1.setAttribute('onkeyup', 'get_column_number_from_xpath(this)');
+//   const element_for_td_2 = document.createTextNode('');
+//   x++;
+//   const element_for_td_3 = get_btn('add', 'btn btn-primary', x, 'add_3_tds(this)');
+//   const element_for_td_4 = get_input('text', 'form-control', 'titles[]', 'e.g. price');
+//   const element_for_td_5 = get_input('text', 'form-control', `xpaths_to_scrape_in_new_pages[${x}][]`, 'e.g. /html/body/div');
+//   const element_for_td_6 = get_btn('delete', 'btn btn-danger', '', 'delete_table(this)');
+//   const elements_for_tds = [element_for_td_1, element_for_td_2, element_for_td_3, element_for_td_4, element_for_td_5, element_for_td_6];
+//   add_tr_in_tbody(elements_for_tds, table.querySelector('tbody'));
+//
+//   column_numbers_to_click_section.appendChild(table);
+// }
+
 // column_numbers_to_click_section
 const column_numbers_to_click_section = document.getElementById('column_numbers_to_click_section');
-const add_btn_for_column_numbers_to_click = document.getElementById('add_btn_for_column_numbers_to_click');
+const column_numbers_to_click_label = document.getElementById('column_numbers_to_click_label');
 
 function add_3_tds (add_btn) {
   const element_1 = document.createTextNode('');
   const element_2 = document.createTextNode('');
   const element_3 = document.createTextNode('');
   const element_4 = get_input('text', 'form-control', 'titles[]', 'e.g. price');
-  const element_5 = get_input('text', 'form-control', `xpaths_to_scrape_in_new_pages[${add_btn.getAttribute('id')}][]`, 'e.g. /html/body/div');
+  const element_5 = get_input('text', 'form-control', 'xpaths_to_scrape_in_a_new_page[]', 'e.g. /html/body/div');
   const element_6 = get_btn('delete', 'btn btn-danger', '', 'delete_tr(this)');
   const elements = [element_1, element_2, element_3, element_4, element_5, element_6];
   add_tr_in_tbody(elements, add_btn.closest('table').querySelector('tbody'));
@@ -147,7 +207,7 @@ function add_3_tds (add_btn) {
 
 function get_column_number_from_xpath (input_for_xpath_of_element_to_click_in_the_table) {
   const td_for_column_number_from_xpath = input_for_xpath_of_element_to_click_in_the_table.closest('td').nextElementSibling;
-  const td_part_of_xpath = input_for_xpath_of_element_to_click_in_the_table.value.match(/td\[[0-9]+\]/); //match method returns an array
+  const td_part_of_xpath = input_for_xpath_of_element_to_click_in_the_table.value.match(/td\[[0-9]+\]/); //match method returns array
 
   if (td_part_of_xpath !== null) {
     const column_number = td_part_of_xpath[0].match(/[0-9]+/);
@@ -157,9 +217,16 @@ function get_column_number_from_xpath (input_for_xpath_of_element_to_click_in_th
   }
 }
 
+function delete_column_numbers_to_click_table(delete_btn) {
+  delete_btn.closest('table').remove();
+  const column_numbers_to_click_label = document.getElementById('column_numbers_to_click_label');
+  const add_btn = get_btn('add', 'btn btn-primary', '', 'create_column_numbers_to_click_table(this)')
+  column_numbers_to_click_label.appendChild(add_btn);
+}
+
 let x = 0;
 
-add_btn_for_column_numbers_to_click.onclick = function () {
+function create_column_numbers_to_click_table(add_btn) {
   const table = get_table();
 
   const element_for_th_1 = document.createTextNode('xpath of element to click in the table');
@@ -171,19 +238,26 @@ add_btn_for_column_numbers_to_click.onclick = function () {
   const elements_for_ths = [element_for_th_1, element_for_th_2, element_for_th_3, element_for_th_4, element_for_th_5, element_for_th_6];
   add_tr_in_thead(elements_for_ths, table.querySelector('thead'));
 
-  const element_for_td_1 = get_input('text', 'form-control', 'xpaths_of_elements_to_click_in_the_table[]', 'e.g. /html/body/div');
+  const element_for_td_1 = get_input('text', 'form-control', 'xpath_of_a', 'e.g. /html/body/div');
   element_for_td_1.setAttribute('onkeyup', 'get_column_number_from_xpath(this)');
   const element_for_td_2 = document.createTextNode('');
   x++;
   const element_for_td_3 = get_btn('add', 'btn btn-primary', x, 'add_3_tds(this)');
   const element_for_td_4 = get_input('text', 'form-control', 'titles[]', 'e.g. price');
-  const element_for_td_5 = get_input('text', 'form-control', `xpaths_to_scrape_in_new_pages[${x}][]`, 'e.g. /html/body/div');
-  const element_for_td_6 = get_btn('delete', 'btn btn-danger', '', 'delete_table(this)');
+  const element_for_td_5 = get_input('text', 'form-control', 'xpaths_to_scrape_in_a_new_page[]', 'e.g. /html/body/div');
+  const element_for_td_6 = get_btn('delete', 'btn btn-danger', '', 'delete_column_numbers_to_click_table(this)');
   const elements_for_tds = [element_for_td_1, element_for_td_2, element_for_td_3, element_for_td_4, element_for_td_5, element_for_td_6];
   add_tr_in_tbody(elements_for_tds, table.querySelector('tbody'));
 
   column_numbers_to_click_section.appendChild(table);
+
+  add_btn.remove();
 }
+
+
+
+
+
 
 
 // pagination_section
@@ -241,7 +315,6 @@ $(function() {
 
       $.ajax({
         url: 'http://localhost:81/csr/zts5.php',
-	//url: 'http://localhost:81/csr/zts3.php',
         type: 'POST',
         data: $('#scraping_form').serialize(),
         // Until request is completed

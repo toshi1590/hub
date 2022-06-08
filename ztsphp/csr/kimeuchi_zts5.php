@@ -12,34 +12,30 @@ use Facebook\WebDriver\Exception\UnexpectedJavascriptException;
 use Facebook\WebDriver\Exception\StaleElementReferenceException;
 use Facebook\WebDriver\Exception\WebDriverCurlException;
 
+
 $data = [];
-$url = $_POST['url'];
-$column_numbers_to_scrape = $_POST['column_numbers_to_scrape'];
-$titles = $_POST['titles'];
+$url = "https://sciencelatvia.lv/#/pub/eksperti/list";
+$column_numbers_to_scrape = [
+  "2",
+  "3",
+  "6"
+];
+$titles = [
+  "vards",
+  "uzvards",
+  "lzp",
+  "Ievēlēšanas datums",
+  "Iegūtais grāds (piem., Mg., Dr., PhD)"
+];
+$xpath_of_a = "/html/body/div/div/div[1]/section[2]/div/div/div/div[4]/div/div/div/div[1]/div/table/tbody/tr[9]/td[3]/span";
+$xpaths_to_scrape_in_a_new_page = [
+  "/html/body/div/div/div[1]/section[2]/div/div/form/div[2]/div[1]/div/div/div/div[3]/div/div[2]/div/div[2]/div/div[4]/div/div/input",
+  "/html/body/div/div/div[1]/section[2]/div/div/form/div[2]/div[1]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/div/input"
+];
+$rows = "7";
+$text_of_next_btn = "»";
+$pages = "10";
 
-if (!empty($_POST['xpath_of_a'])) {
-  $xpath_of_a = $_POST['xpath_of_a'];
-} else {
-  $xpath_of_a = null;
-}
-
-if (!empty($_POST['xpaths_to_scrape_in_a_new_page'])) {
-  $xpaths_to_scrape_in_a_new_page = $_POST['xpaths_to_scrape_in_a_new_page'];
-} else {
-  $xpaths_to_scrape_in_a_new_page = null;
-}
-
-$rows = $_POST['rows'];
-
-if (!empty($_POST['text_of_next_btn'])) {
-  $text_of_next_btn = $_POST['text_of_next_btn'];
-}
-
-if (!empty($_POST['pages'])) {
-  $pages = $_POST['pages'];
-} else {
-  $pages = 1;
-}
 
 //
 $shou = floor(($pages / 5));
@@ -55,7 +51,7 @@ for ($i = 1; $i <= 5; $i++) {
 }
 //
 
-array_push($data,$_POST['titles']);
+array_push($data, $titles);
 
 for ($i = 1; $i <= $pages; $i++) {
   ${'runtime'.$i} = new \parallel\Runtime();
@@ -553,14 +549,21 @@ $end_time = microtime(true);
 $execution_time = ($end_time - $start_time);
 
 
-for ($i = 0; $i < count($data); $i++) {
-  if ($i == 0) {
-    array_unshift($data[$i], 'id');
-  } else {
-    //array_unshift($data[$i], $i);
-    array_unshift($data[$i], $execution_time);
-  }
-}
 
-echo json_encode($data);
+//
+echo $pages . ", " . $rows . ", " . $execution_time . PHP_EOL;
+//
+
+
+
+//for ($i = 0; $i < count($data); $i++) {
+//  if ($i == 0) {
+//    array_unshift($data[$i], 'id');
+//  } else {
+//    //array_unshift($data[$i], $i);
+//    array_unshift($data[$i], $execution_time);
+//  }
+//}
+//
+//echo json_encode($data);
 exec("echo 1 >> record.txt");
