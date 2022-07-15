@@ -1,4 +1,4 @@
-for i in {10..20}
+for i in {1..20}
 do
   typeset url='https://finance.yahoo.co.jp/stocks/ranking/up?market=all&term=daily&page=1';
   typeset column_numbers_to_scrape='[1,2]';
@@ -12,7 +12,7 @@ do
 
   . create.sh $url $column_numbers_to_scrape $titles $rows $xpath_of_a $xpaths_to_scrape_in_a_new_page $parameter $pages $number_of_hrefs
 
-  for j in {1..10}
+  for j in {1..5}
   do
     docker exec -it -w /var/www/html/ssr ztsphp php scraping.php;
   done

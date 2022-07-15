@@ -32,9 +32,9 @@ $xpaths_to_scrape_in_a_new_page = [
   "/html/body/div/div/div[1]/section[2]/div/div/form/div[2]/div[1]/div/div/div/div[3]/div/div[2]/div/div[2]/div/div[4]/div/div/input",
   "/html/body/div/div/div[1]/section[2]/div/div/form/div[2]/div[1]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/div/input"
 ];
-$rows = "7";
+$rows = "1";
 $text_of_next_btn = "»";
-$pages = "10";
+$pages = "11";
 
 
 //

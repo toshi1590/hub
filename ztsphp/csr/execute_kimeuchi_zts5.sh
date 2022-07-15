@@ -1,10 +1,10 @@
-for times in {1..5}
+for times in {1..20}
 do
-  for pages in {1..15} 
+  for pages in {11..15} 
   do
     sed "37 s/[0-9]\+/$pages/" kimeuchi_zts5.php -i
   
-    for rows in {1..15} 
+    for rows in {1..5} 
     do
       docker stop chrome1 chrome2 chrome3 chrome4 chrome5
       docker restart selenium-hub ztsphp
